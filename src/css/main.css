@@ -34,7 +34,7 @@ a {
 }
 
 img{
-	max-width: 100%;
+	width: 100%;
 }
 
 /* Utilidades */
@@ -47,12 +47,18 @@ img{
 .centrar-texto{
 	text-align: center;
 }
+.font-20{
+	font-size: 20px;
+}
 .btn{
 	background-color: var(--rojo);
 	color: white;
 	min-width: 170px;
 	height: 48px;
 	border-radius: 24px;
+	display: inline-table;
+	padding-top: 11px;
+	padding-bottom: 11px;
 }
 .campo {
 	& input{
@@ -65,25 +71,23 @@ img{
 
 /* Header */
 header nav ul li{
-	font-size: 16px;
+	font-size: 16px;	
 }
 .signUpButton{
 	& a{
 		display: block;
-		padding-top: 12px;
-		padding-bottom: 12px;
 	}
 }
 .mobileMenu{
-	top:40px;
+	right:-100%;
+	top: 80px;
 	background-color: var(--gris);
-	height: 0;
 	overflow: hidden;
-	transition: height .5s ease-in-out, top .3s ease-in-out;
-	z-index: -1;
+	transition: height .3s ease-in-out, right .7s ease-in-out, opacity .3s ease-in;
+	opacity: 0;
 	&.visible{
-		top: 80px;
-		height: 270px;
+		right: 0;
+		opacity: 1;
 	}
 }
 
@@ -107,5 +111,13 @@ header nav ul li{
 @media (width < 768px ){
 	.hero{
 		background-image: url("../img/bg-hero-mobile.jpg");
+	}
+}
+
+/* Gráfica */
+.grafica {
+	& img{
+		max-width: 570px;
+		margin: 0 auto;
 	}
 }
