@@ -1,0 +1,54 @@
+:root{
+	--fuentePrincipal: 'DM Sans', sans-serif;
+	--rojo: #E10A0A;
+	--negro: #333333;
+	--gris: #999999;
+	--gridOscuro: #eeeeee;
+	--morado: #3C1053;
+	--moradoOscuro: #2C0B3E;
+}
+
+/* Global */
+html, body {
+	font-family: var(--fuentePrincipal);
+}
+.contenedor{
+	width: min(90%, 120rem);
+	margin:0 auto;
+}
+a {
+	text-decoration: none;
+}
+
+img{
+	max-width: 100%;
+}
+
+/* Utilidades */
+.no-margin{
+	margin: 0;
+}
+.no-padding{
+	padding: 0;
+}
+.centrar-texto{
+	text-align: center;
+}
+.btn{
+	background-color: var(--rojo);
+	color: white;
+	min-width: 170px;
+	height: 48px;
+}
+/* Header */
+.signUpButton{
+	& a{
+		display: block;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+}
+
+.mobileMenu{
+	top:80px;
+}
