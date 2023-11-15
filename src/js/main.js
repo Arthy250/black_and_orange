@@ -35,5 +35,45 @@ document.addEventListener('DOMContentLoaded', function() {
 		console.log('No data error', err);
 	});
 
+	const slides = document.getElementById('precios');
+	let buttonsCarrousel = document.getElementById('bullets');
+	let buttonsCarrouselTablet = document.getElementById('bulletsTablet');
+
+	buttonsCarrousel.addEventListener("click", e => {
+		if (e.target.nodeName === "BUTTON") {
+			Array.from(buttonsCarrousel.children).forEach(item =>
+				item.classList.remove("activo")
+			);
+			if (e.target.classList.contains("uno")) {
+				slides.style.transform = "translateX(-0%)";
+				e.target.classList.add("activo");
+			} else if (e.target.classList.contains("dos")) {
+				slides.style.transform = "translateX(-103.5%)";
+				e.target.classList.add("activo");
+			} else if (e.target.classList.contains('tres')){
+				slides.style.transform = 'translatex(-207.5%)';
+				e.target.classList.add('activo');
+			} else if (e.target.classList.contains('cuatro')){
+				slides.style.transform = 'translatex(-311.5%)';
+				e.target.classList.add('activo');
+			}
+		}
+	});
+
+	buttonsCarrouselTablet.addEventListener("click", e => {
+		if (e.target.nodeName === "BUTTON") {
+			Array.from(buttonsCarrousel.children).forEach(item =>
+				item.classList.remove("activo")
+			);
+			if (e.target.classList.contains("uno")) {
+				slides.style.transform = "translateX(-0%)";
+				e.target.classList.add("activo");
+			} else if (e.target.classList.contains("dos")) {
+				slides.style.transform = "translateX(-101%)";
+				e.target.classList.add("activo");
+			}
+		}
+	});
+	
 }, false);
 

@@ -159,24 +159,6 @@
       </div>
 
       <ul id='blogPosts' class="blogs grid gap-9 mt-12 text-white">
-        
-        <!-- <li class="entrada p-8 rounded-lg">
-          <h4>Beneficios fiscales al arrendar un auto</h4>
-          <p class='mb-3'>Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.</p>
-          <a href="#">Learn more</a>
-        </li>
-        
-        <li class="entrada p-8 rounded-lg">
-          <h4>Beneficios fiscales al arrendar un auto</h4>
-          <p class='mb-3'>Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.</p>
-          <a href="#">Learn more</a>
-        </li>
-        
-        <li class="entrada p-8 rounded-lg">
-          <h4>Beneficios fiscales al arrendar un auto</h4>
-          <p class='mb-3'>Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.</p>
-          <a href="#">Learn more</a>
-        </li> -->
 
       </ul>
 
@@ -219,10 +201,10 @@
         <h2 class='mb-4'>Normal plan</h2>
       </div>
 
-      <div class="precios grid gap-9 mt-12 ">
+      <div id='precios' class="precios flex md:grid md:gap-9 mt-12 ">
         
         <div class="precio p-9 rounded-lg text-center">
-          <div class="img rounded-full flex items-center justify-center">
+          <div class="icono rounded-full flex items-center justify-center">
             <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
               <mask id="mask0_3_413" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="33" height="33">
               <rect width="33" height="33" fill="#D9D9D9"/>
@@ -245,7 +227,7 @@
         </div>
         
         <div class="precio p-9 rounded-lg text-center activo">
-          <div class="img rounded-full flex items-center justify-center">
+          <div class="icono rounded-full flex items-center justify-center">
             <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
               <mask id="mask0_3_398" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="33" height="33">
               <rect width="33" height="33" fill="#D9D9D9"/>
@@ -268,7 +250,7 @@
         </div>
 
         <div class="precio p-9 rounded-lg text-center">
-          <div class="img rounded-full flex items-center justify-center">
+          <div class="icono rounded-full flex items-center justify-center">
             <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
               <mask id="mask0_3_407" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="33" height="33">
               <rect width="33" height="33" fill="#D9D9D9"/>
@@ -291,7 +273,7 @@
         </div>
 
         <div class="precio p-9 rounded-lg text-center">
-          <div class="img rounded-full flex items-center justify-center">
+          <div class="icono rounded-full flex items-center justify-center">
             <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
               <mask id="mask0_3_428" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="33" height="33">
               <rect width="33" height="33" fill="#D9D9D9"/>
@@ -314,6 +296,19 @@
         </div>
 
       </div>
+      
+      <div id='bullets' class="bullets mt-8 text-center md:hidden">
+        <button class="uno activo"></button>
+        <button class="dos"></button>
+        <button class="tres"></button>
+        <button class="cuatro"></button>
+      </div>
+
+      <div id='bulletsTablet' class="bullets mt-8 text-center hidden md:block lg:hidden">
+        <button class="uno activo"></button>
+        <button class="dos"></button>
+      </div>
+
     </div>
   </section> <!-- Termina porcentaje sección -->
 

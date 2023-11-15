@@ -2563,8 +2563,24 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-2\/5 {
     width: 40%;
+  }
+
+  .md\:gap-9 {
+    gap: 2.25rem;
   }
 }
 
