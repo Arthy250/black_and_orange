@@ -121,3 +121,46 @@ header nav ul li{
 		margin: 0 auto;
 	}
 }
+
+/* Points */
+.points {
+	& .lista{
+		position: relative;
+		padding-left: 50px;
+			&:before{
+				content: '';
+				width: 1px;
+				height: 63%;
+				position: absolute;
+				background-color: var(--rojo);
+				left: 18px;
+				top: 54px;
+			}
+		& li{
+			position: relative;
+			& :before{
+				content: '';
+				width: 16px;
+				height: 16px;
+				background-color: var(--rojo);
+				border-radius: 50%;
+				position: absolute;
+				left: -40px;
+				top: 35px;
+			}
+			& .numero {
+				font-size: 56px;
+				font-weight: 700;
+			}
+			& .titulo{
+				font-size: 24px;
+			}
+			& .desc{
+				color: var(--grisOscuro);
+			}
+		}
+	}
+	& img{
+		max-width: 570px;
+	}
+}
