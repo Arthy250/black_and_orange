@@ -162,5 +162,27 @@ header nav ul li{
 	}
 	& img{
 		max-width: 570px;
+		margin: 0 auto;
+	}
+}
+
+/* Blog */
+.blog{
+	background-image: url("../img/blog-bg.jpg");
+	& p{
+		color: var(--negro);
+	}
+	& .blogs{
+		grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+		& .entrada{
+			background-color: var(--rojo);
+			& h4{
+				font-size: 24px;
+				margin-bottom: 15px;
+			}
+			& p{
+				color: white;
+			}
+		}
 	}
 }

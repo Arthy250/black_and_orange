@@ -17,7 +17,7 @@
 </head>
 <body>
   <!-- Inicia header -->
-  <header class="py-3 bg-white fixed w-full"> 
+  <header class="py-3 bg-white fixed w-full z-10"> 
     <div class="contenedor flex justify-between items-center relative ">
       <div class="logo w-1/2 md:w-2/5">
         <img class="w-32" src="./src/img/bscw-logo.svg" alt='Logo'/>
@@ -85,7 +85,7 @@
     
     <!-- Comienza grafica sección -->
     <div class="grafica">
-      <div class="contenedor flex flex-col lg:flex-row justify-between items-center gap-y-10 py-14">
+      <div class="contenedor flex flex-col lg:flex-row justify-between items-center gap-y-10 py-8 lg:py-20">
 
         <div class="contenido lg:w-2/5 lg:pr-6">
           <h2 class='mb-4'>Esto es posible porqué las empresas...</h2>
@@ -99,53 +99,86 @@
           </div>
         </div>
 
-        <div class="bg-white w-full lg:w-3/5">
+        <div class="w-full lg:w-3/5">
           <img src="./src/img/grafica.jpg" alt="">
         </div>
 
       </div>
-    </div> <!-- Comienza grafica sección -->
+    </div> <!-- Términa grafica sección -->
 
-     <!-- Comienza points sección -->
-     <div class="points">
-      <div class="contenedor flex flex-col lg:flex-row justify-between items-center gap-y-10 py-14">
+    <!-- Comienza points sección -->
+    <div class="points">
+    <div class="contenedor flex flex-col lg:flex-row justify-between items-center gap-y-10 py-8 lg:py-20">
 
+      <div class="w-full lg:w-1/2">
+        <img src="./src/img/oval.jpg" alt="">  
+      </div>
 
-        <div class="bg-white w-full lg:w-1/2">
-          <img src="./src/img/oval.jpg" alt="">  
+      <div class="contenido lg:w-1/2 lg:pr-14">
+        <ul class='lista'>
+          <li class='flex'>
+            <p class="numero mr-5">1.</p>
+            <div>
+              <h4 class="titulo mt-7 mb-2.5">Great team work</h4>
+              <p class="desc">Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos. Mazim nemore singulis an ius, nullam ornatus nam ei.</p>
+            </div>
+          </li>
+          <li class='flex'>
+            <p class="numero mr-5">2.</p>
+            <div>
+              <h4 class="titulo mt-7 mb-2.5">Career prospects</h4>
+              <p class="desc">Vix habeo scaevola percipitur ne, qui noster abhorreant ne, mea in dicant eligendi evertitur. Ad falli aliquid menandri his. Usu vocent copiosae ut. No nihil munere eum.</p>
+            </div>
+          </li>
+          <li class='flex'>
+            <p class="numero mr-5">3.</p>
+            <div>
+              <h4 class="titulo mt-7 mb-2.5">Beautiful workspace</h4>
+              <p class="desc">Te aliquam noluisse his. Et vel epicuri detracto indoctum, et fierent pericula vim, veniam epicuri an eum. Ad mutat quaestio erroribus eam, ei mea modus volumus abhorreant.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div> <!-- Termina points sección -->
+
+  <!-- Comienza blog sección -->
+  <div class="blog bg-cover bg-no-repeat bg-center">
+    <div class="contenedor gap-y-10 py-8 lg:py-20">
+      <div class="flex flex-col lg:flex-row justify-between items-center">
+
+        <div class="contenido lg:w-2/5">
+          <h2 class='mb-4'>Nuestro blog</h2>
         </div>
 
-        <div class="contenido lg:w-1/2 lg:pr-14">
-          <ul class='lista'>
-            <li class='flex'>
-              <p class="numero mr-5">1.</p>
-              <div>
-                <h4 class="titulo mt-7 mb-2.5">Great team work</h4>
-                <p class="desc">Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos. Mazim nemore singulis an ius, nullam ornatus nam ei.</p>
-              </div>
-            </li>
-            <li class='flex'>
-              <p class="numero mr-5">2.</p>
-              <div>
-                <h4 class="titulo mt-7 mb-2.5">Career prospects</h4>
-                <p class="desc">Vix habeo scaevola percipitur ne, qui noster abhorreant ne, mea in dicant eligendi evertitur. Ad falli aliquid menandri his. Usu vocent copiosae ut. No nihil munere eum.</p>
-              </div>
-            </li>
-            <li class='flex'>
-              <p class="numero mr-5">3.</p>
-              <div>
-                <h4 class="titulo mt-7 mb-2.5">Beautiful workspace</h4>
-                <p class="desc">Te aliquam noluisse his. Et vel epicuri detracto indoctum, et fierent pericula vim, veniam epicuri an eum. Ad mutat quaestio erroribus eam, ei mea modus volumus abhorreant.</p>
-              </div>
-            </li>
-          </ul>
+        <div class="w-full lg:w-2/5 lg:mr-6">
+          <p>An mel corpora consectetuer. Duo veri eripuit honestatis ei. Mandamus expetenda has ex. Eu minim movet quodsi eum. Et vim dolore epicurei, ut aeque postea nam, at posse dicta.</p>
         </div>
-
-        
 
       </div>
-    </div> <!-- Comienza points sección -->
-  </main>
+
+      <div class="blogs grid gap-9 mt-12 text-white">
+        <div class="entrada p-8 rounded-lg">
+          <h4>Beneficios fiscales al arrendar un auto</h4>
+          <p class='mb-3'>Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="entrada p-8 rounded-lg">
+          <h4>Beneficios fiscales al arrendar un auto</h4>
+          <p class='mb-3'>Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="entrada p-8 rounded-lg">
+          <h4>Beneficios fiscales al arrendar un auto</h4>
+          <p class='mb-3'>Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Termina blog sección -->
+  
+</main>
   <footer></footer>
 </body>
 </html>
