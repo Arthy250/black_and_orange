@@ -283,3 +283,13 @@ header nav ul li{
 		color: var(--rojo);
 	}
 }
+
+/* Footer */
+footer{
+	background-color: var(--morado);
+}
+
+/* Copyright */
+.copyright{
+	background-color: var(--moradoOscuro);
+}
