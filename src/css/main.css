@@ -272,3 +272,14 @@ header nav ul li{
 		}
 	}
 }
+
+/* Newsletter */
+.newsletter-seccion{
+	& h5{
+		letter-spacing: 0.5rem;
+	}
+	& h3{
+		font-size: 40px;
+		color: var(--rojo);
+	}
+}
