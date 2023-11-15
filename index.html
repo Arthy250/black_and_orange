@@ -16,7 +16,44 @@
   <script src="./src/js/main.js"></script>
 </head>
 <body>
-  <header></header>
+  <!-- Inicia header -->
+  <header class='py-3 bg-white'> 
+    <div class="contenedor flex justify-between items-center relative ">
+      <div class="logo w-1/2 md:w-2/5">
+        <img class="w-32" src="./src/img/BSCW-logo.svg" alt='Logo'/>
+      </div>
+      <nav class="menu w-1/2 hidden lg:block lg:w-3/5">
+        <ul class='flex justify-between items-center font-semibold'>
+          <li><a href="#">¿Por qué nosotros?</a></li>
+          <li><a href="#">Plataforma digital de wellness</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li class='btn signUpButton rounded-3xl'>
+            <a href="#" class='text-center'>Sign up</a>
+          </li>
+        </ul>
+      </nav>
+      <button id='burguerMenu' class=" burguerMenu lg:hidden">
+        <img src="./src/img/burguerMenu.svg" alt="Body Systems">
+      </button>
+    </div>
+
+    
+    <!-- Mobile -->
+    <nav id='mobileMenu' class="lg:hidden mobileMenu w-full absolute py-5 px-10">
+      <ul class='flex justify-between flex-col items-end gap-5 font-semibold'>
+        <li><a href="#">¿Por qué nosotros?</a></li>
+        <li><a href="#">Plataforma digital de wellness</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li class='btn w-full signUpButton rounded-3xl'>
+          <a href="#" class='text-center'>Sign up</a>
+        </li>
+      </ul>
+    </nav>
+  </header>  
+
+  <!-- Términa header -->
   <main></main>
   <footer></footer>
 </body>

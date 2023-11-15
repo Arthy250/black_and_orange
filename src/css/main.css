@@ -2,8 +2,8 @@
 	--fuentePrincipal: 'DM Sans', sans-serif;
 	--rojo: #E10A0A;
 	--negro: #333333;
-	--gris: #999999;
-	--gridOscuro: #eeeeee;
+	--gris: #eeeeee;
+	--gridOscuro: #999999;
 	--morado: #3C1053;
 	--moradoOscuro: #2C0B3E;
 }
@@ -48,7 +48,15 @@ img{
 		padding-bottom: 12px;
 	}
 }
-
 .mobileMenu{
-	top:80px;
+	top:40px;
+	background-color: var(--gris);
+	height: 0;
+	overflow: hidden;
+	transition: height .5s ease-in-out, top .3s ease-in-out;
+	z-index: -1;
+	&.visible{
+		top: 80px;
+		height: 270px;
+	}
 }
