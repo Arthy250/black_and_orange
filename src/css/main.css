@@ -93,7 +93,7 @@ header nav ul li{
 
 /* Hero */
 .hero{
-	min-height: 80vh;
+	min-height: 90vh;
 	background-image: url("../img/bg-hero.jpg");
 	& .contenido{
 		& h1{
@@ -173,7 +173,6 @@ header nav ul li{
 		color: var(--negro);
 	}
 	& .blogs{
-		grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
 		& .entrada{
 			background-color: var(--rojo);
 			& h4{
@@ -197,7 +196,6 @@ header nav ul li{
 		}
 	}
 	& .porcentajes{
-		grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
 		& .porcentaje{
 			background-color: white;
 			color: var(--morado);
@@ -223,7 +221,7 @@ header nav ul li{
 .precios-seccion{
 	background-color: var(--gris);
 	& .precios{
-		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
 		transition: transform 1s ease-in-out;
 		& .precio{
 			background-color: white;
@@ -254,7 +252,7 @@ header nav ul li{
 			}
 			&.activo{
 				border: 1px solid var(--rojo);
-				& .img{
+				& .icono{
 					background-color: var(--morado);
 				}
 				& svg path{
@@ -294,7 +292,20 @@ header nav ul li{
 	}
 }
 
-@media (max-width:768px){
+@media(min-width:920px){
+	.bulletsTablet{
+		display: none;
+	}
+}
+@media(min-width:1576px){
+	.precios-seccion{
+		& .precios{
+			grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+		}
+	}
+}
+
+@media (max-width:920px){
 	.precios-seccion{
 		overflow: hidden;
 		& .contenedor{

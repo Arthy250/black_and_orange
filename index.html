@@ -23,11 +23,11 @@
         <img class="w-32" src="./src/img/bscw-logo.svg" alt='Logo'/>
       </div>
       <nav class="menu w-1/2 hidden lg:block lg:w-3/5">
-        <ul class='flex justify-between items-center font-semibold'>
-          <li><a href="#">¿Por qué nosotros?</a></li>
-          <li><a href="#">Plataforma digital de wellness</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Servicios</a></li>
+        <ul class='flex justify-between items-center gap-3 font-semibold'>
+          <li class='grow'><a href="#">¿Por qué nosotros?</a></li>
+          <li class='grow'><a href="#">Plataforma digital de wellness</a></li>
+          <li class='grow'><a href="#">Blog</a></li>
+          <li class='grow'><a href="#">Servicios</a></li>
           <li class='btn signUpButton'>
             <a href="#" class='text-center'>Sign up</a>
           </li>
@@ -158,7 +158,7 @@
 
       </div>
 
-      <ul id='blogPosts' class="blogs grid gap-9 mt-12 text-white">
+      <ul id='blogPosts' class="blogs flex flex-col lg:flex-row gap-9 mt-12 text-white">
 
       </ul>
 
@@ -173,18 +173,18 @@
         <h2 class='mb-4'>Salud física, emocional, financiera, nutrición, familia y mucho más.</h2>
       </div>
 
-      <div class="porcentajes grid gap-9 mt-12 ">
-        <div class="porcentaje p-9 rounded-lg text-center">
+      <div class="porcentajes flex flex-col lg:flex-row gap-9 mt-12 ">
+        <div class="porcentaje p-9 rounded-lg text-center grow w-full">
           <h5 class='uppercase'>probatus</h4>
           <h2>42%</h2>
           <p>Veritus</p>
         </div>
-        <div class="porcentaje p-9 rounded-lg text-center">
+        <div class="porcentaje p-9 rounded-lg text-center grow w-full">
           <h5 class='uppercase'>graeco</h4>
           <h2>73%</h2>
           <p>Affert verterem</p>
         </div>
-        <div class="porcentaje p-9 rounded-lg text-center">
+        <div class="porcentaje p-9 rounded-lg text-center grow w-full">
           <h5 class='uppercase'>diceret</h4>
           <h2>99%</h2>
           <p>Probo semper</p>
@@ -193,7 +193,7 @@
     </div>
   </section> <!-- Termina porcentaje sección -->
 
-  <!-- Comienza porcentaje sección -->
+  <!-- Comienza precios sección -->
   <section class="precios-seccion">
     <div class="contenedor gap-y-10 py-8 lg:py-20">
       
@@ -201,7 +201,7 @@
         <h2 class='mb-4'>Normal plan</h2>
       </div>
 
-      <div id='precios' class="precios flex md:grid md:gap-9 mt-12 ">
+      <div id='precios' class="precios md:grid md:gap-9 mt-12 ">
         
         <div class="precio p-9 rounded-lg text-center">
           <div class="icono rounded-full flex items-center justify-center">
@@ -304,13 +304,13 @@
         <button class="cuatro"></button>
       </div>
 
-      <div id='bulletsTablet' class="bullets mt-8 text-center hidden md:block lg:hidden">
+      <div id='bulletsTablet' class="bullets bulletsTablet mt-8 hidden md:block text-center">
         <button class="uno activo"></button>
         <button class="dos"></button>
       </div>
 
     </div>
-  </section> <!-- Termina porcentaje sección -->
+  </section> <!-- Termina precios sección -->
 
   <!-- Comienza newsletter sección -->
   <section class="newsletter-seccion bg-white">
