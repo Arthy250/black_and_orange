@@ -186,3 +186,34 @@ header nav ul li{
 		}
 	}
 }
+
+/* Porcentaje */
+.porcentaje-section{
+	background-color: var(--morado);
+	& .titulo{
+		& h2{
+			max-width: 28ch;
+			margin: 0 auto;
+		}
+	}
+	& .porcentajes{
+		grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+		& .porcentaje{
+			background-color: white;
+			color: var(--morado);
+			border: 1px solid var(--morado);
+			& h5{
+				font-size: 16px;
+				font-weight: 400;
+			}
+			& h2{
+				font-size: 56px;
+				margin-top: 20px;
+			}
+			& p{
+				font-size: 12px;
+				font-weight: 700;
+			}
+		}
+	}
+}
