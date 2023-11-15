@@ -188,7 +188,7 @@ header nav ul li{
 }
 
 /* Porcentaje */
-.porcentaje-section{
+.porcentaje-seccion{
 	background-color: var(--morado);
 	& .titulo{
 		& h2{
@@ -213,6 +213,61 @@ header nav ul li{
 			& p{
 				font-size: 12px;
 				font-weight: 700;
+			}
+		}
+	}
+}
+
+/* Precios */
+
+.precios-seccion{
+	background-color: var(--gris);
+	& .precios{
+		grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+		& .precio{
+			background-color: white;
+			& .img {
+				width: 70px;
+				height: 70px;
+				margin: 0 auto;
+				background-color: var(--gris);
+				& svg path{
+					fill: var(--morado);
+				}
+			}
+			& h4 {
+				color: #1C1B1F;
+			}
+			& ul{
+				color: var(--grisOscuro);
+			}
+			& h2{
+				font-size: 56px;
+				line-height: 64px;
+				color: var(--morado);
+			}
+			& .btn{
+				background-color: white;
+				border: 1px solid var(--morado);
+				color: #3C1053;
+			}
+			&.activo{
+				border: 1px solid var(--rojo);
+				& .img{
+					background-color: var(--morado);
+				}
+				& svg path{
+					fill: white;
+				}
+				& ul{
+					color: #1C1B1F;
+					font-weight: 700;
+				}
+				& .btn{
+					background-color: var(--morado);
+					border: 1px solid var(--morado);
+					color: white;
+				}
 			}
 		}
 	}
