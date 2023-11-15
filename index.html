@@ -68,13 +68,13 @@
           <h4 class="mb-4">Start here</h4>
           <form action="" id='formulario'>
             <div class="campo">
-              <input type="text" id="name" placeholder="Name">
+              <input type="text" id="name" placeholder="Name" autocomplete="Your name">
             </div>
             <div class="campo">
-              <input type="text" id="phone" placeholder="Phone">
+              <input type="text" id="phone" placeholder="Phone" autocomplete="Your phone">
             </div>
             <div class="campo">
-              <input type="email" id="email" placeholder="Email">
+              <input type="email" id="email" placeholder="Email" autocomplete="Your email">
             </div>
             <input type="submit" value="Sign up" class='btn w-full'>
           </form>
@@ -158,23 +158,28 @@
 
       </div>
 
-      <div class="blogs grid gap-9 mt-12 text-white">
-        <div class="entrada p-8 rounded-lg">
+      <ul id='blogPosts' class="blogs grid gap-9 mt-12 text-white">
+        
+        <!-- <li class="entrada p-8 rounded-lg">
           <h4>Beneficios fiscales al arrendar un auto</h4>
           <p class='mb-3'>Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.</p>
           <a href="#">Learn more</a>
-        </div>
-        <div class="entrada p-8 rounded-lg">
+        </li>
+        
+        <li class="entrada p-8 rounded-lg">
           <h4>Beneficios fiscales al arrendar un auto</h4>
           <p class='mb-3'>Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.</p>
           <a href="#">Learn more</a>
-        </div>
-        <div class="entrada p-8 rounded-lg">
+        </li>
+        
+        <li class="entrada p-8 rounded-lg">
           <h4>Beneficios fiscales al arrendar un auto</h4>
           <p class='mb-3'>Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.</p>
           <a href="#">Learn more</a>
-        </div>
-      </div>
+        </li> -->
+
+      </ul>
+
     </div>
   </section> <!-- Termina blog sección -->
 
@@ -324,21 +329,21 @@
           <div class="flex flex-col lg:flex-row justify-between gap-x-7">
             <div class='w-full lg:w-1/2'>
               <div class="campo lg:my-2">
-                <input type="text" name="Name" id="name" placeholder="Your name">
+                <input type="text" name="Name" id="name" placeholder="Your name" autocomplete="Your name">
               </div>
 
               <div class="campo lg:my-2">
-                <input type="text" name="Name" id="name" placeholder="Your company">
+                <input type="text" name="Company" id="company" placeholder="Your company" autocomplete="Your company">
               </div>
             </div>
 
             <div class='w-full lg:w-1/2'>
               <div class="campo lg:my-2">
-                <input type="email" name="Name" id="name" placeholder="Your email">
+                <input type="email" name="Email" id="email" placeholder="Your email" autocomplete="Your email">
               </div>
 
               <div class="campo lg:my-2">
-                <input type="text" name="Name" id="name" placeholder="Your phone">
+                <input type="text" name="Phone" id="phone" placeholder="Your phone" autocomplete="Your phone">
               </div>
             </div>
           </div>
