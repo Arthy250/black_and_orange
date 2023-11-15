@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Show mobile menu
 	let burguerButton = document.getElementById('burguerMenu');
 	var burguerMenu = document.getElementById("mobileMenu");
-	console.log(burguerMenu)
 	
 	burguerButton.addEventListener("click", () => {
 

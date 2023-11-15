@@ -10,17 +10,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap" rel="stylesheet">
   <!-- CSS -->
-  <link href="/dist/output.css" rel="stylesheet">
+  <link href="./dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="./src/css/main.css">
   <!-- JS -->
   <script src="./src/js/main.js"></script>
 </head>
 <body>
   <!-- Inicia header -->
-  <header class='py-3 bg-white'> 
+  <header class="py-3 bg-white"> 
     <div class="contenedor flex justify-between items-center relative ">
       <div class="logo w-1/2 md:w-2/5">
-        <img class="w-32" src="./src/img/BSCW-logo.svg" alt='Logo'/>
+        <img class="w-32" src="./src/img/bscw-logo.svg" alt='Logo'/>
       </div>
       <nav class="menu w-1/2 hidden lg:block lg:w-3/5">
         <ul class='flex justify-between items-center font-semibold'>
@@ -28,7 +28,7 @@
           <li><a href="#">Plataforma digital de wellness</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Servicios</a></li>
-          <li class='btn signUpButton rounded-3xl'>
+          <li class='btn signUpButton'>
             <a href="#" class='text-center'>Sign up</a>
           </li>
         </ul>
@@ -54,7 +54,32 @@
   </header>  
 
   <!-- Términa header -->
-  <main></main>
+  <main>
+    <div class="hero bg-cover bg-no-repeat bg-center min-h-screen flex items-center">
+      <div class="contenedor flex flex-col lg:flex-row justify-between items-center gap-y-32 py-10">
+        
+        <div class="contenido lg:w-2/5 text-white">
+          <h1 class='mb-4'>Tu programa de bienestar para los colaboradores de tu empresa.</h1>
+          <p>Quidam officiis similique sea ei, vel tollit indoctum efficiendi ei, at nihil tantas platonem eos.</p>
+        </div>
+
+        <div class="formulario bg-white w-full lg:w-2/5 rounded-lg py-12 px-10">
+          <h4 class="mb-4">Start here</h4>
+          <div class="campo">
+            <input type="text" id="name" placeholder="Name">
+          </div>
+          <div class="campo">
+            <input type="text" id="phone" placeholder="Phone">
+          </div>
+          <div class="campo">
+            <input type="email" id="email" placeholder="Email">
+          </div>
+          <input type="submit" value="Sign up" class='btn w-full'>
+          <p class="advice mt-3">* – required</p>
+        </div>
+      </div>
+    </div>
+  </main>
   <footer></footer>
 </body>
 </html>
