@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		data = data.filter(entry => entry.id < 4).slice(0, 100);
 		data.forEach(post => {
 			const postData = 
-			`<li class="entrada p-8 rounded-lg">
+			`<li class="entrada p-8 rounded-lg flex flex-col justify-between">
 				<h4>${post.title}</h4>
 				<p class='mb-3'>${post.body}</p>
 				<a href="#">Learn more</a>
